@@ -45,8 +45,15 @@ namespace simple_calc
 
                 else if (oper == '/')
                 {
-                    total = a / b;
-                    Console.WriteLine("{0} / {1} = {2}", a, b, a / b);
+                    if (b == 0)
+                        {
+                            Console.WriteLine("Ошибка! Нельзя делить на ноль");
+                        }
+                        else
+                        {
+                            total = a / b;
+                            Console.WriteLine("{0} / {1} = {2}", a, b, a / b);
+                        }           
                 }
                 else
                 {
